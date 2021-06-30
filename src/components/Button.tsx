@@ -12,7 +12,8 @@ export function Button (props: ButtonProps) {
   const [ counter, setCounter ] = useState(Number(props.children) || props.counter || 0)
 
   function increment () {
-    setCounter(counter + incrementAmount)
+    const newCounterValue = counter + incrementAmount
+    setCounter(newCounterValue)
   }
 
   return (
